@@ -1,0 +1,44 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Tests in <Sidebar /> should show correctly 1`] = `
+<div>
+  <aside
+    class="journal__sidebar"
+  >
+    <div
+      class="journal__sidebar-navbar"
+    >
+      <h3
+        class="mt-5"
+      >
+          
+        <i
+          class="far fa-moon"
+        />
+          
+        <span />
+      </h3>
+      <button
+        class="btn mt-5"
+        data-testid="logout"
+      >
+        Logout
+      </button>
+    </div>
+    <div
+      class="journal__new-entry"
+      data-testid="new-entry"
+    >
+      <i
+        class="far fa-calendar-plus fa-5x mb-1"
+      />
+      <p>
+        New entry
+      </p>
+    </div>
+    <div
+      class="journal__entries"
+    />
+  </aside>
+</div>
+`;

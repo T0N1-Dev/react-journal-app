@@ -1,0 +1,70 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Pruebas en <LoginScreen /> should match the snapshot 1`] = `
+<div>
+  <h3
+    class="auth__title"
+  >
+    Login
+  </h3>
+  <form
+    class="animate__animated animate__fadeIn animate__faster"
+  >
+    <input
+      autocomplete="off"
+      class="auth__input"
+      name="email"
+      placeholder="Email"
+      type="text"
+      value="test@gmail.com"
+    />
+    <input
+      class="auth__input"
+      name="password"
+      placeholder="Password"
+      type="password"
+      value="123456"
+    />
+    <button
+      class="btn btn-primary btn-block"
+      type="submit"
+    >
+      Login
+    </button>
+    <div
+      class="auth__social-network"
+    >
+      <p>
+        Login with social networks
+      </p>
+      <div
+        class="google-btn"
+      >
+        <div
+          class="google-icon-wrapper"
+        >
+          <img
+            alt="google button"
+            class="google-icon"
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQRB4kg1jgnqD5fEaCSHKMoUdFeTBj9CH_opA&s"
+          />
+        </div>
+        <p
+          class="btn-text"
+        >
+          <b>
+            Sign in with google
+          </b>
+        </p>
+      </div>
+    </div>
+    <a
+      class="link"
+      data-testid="create-link"
+      href="/auth/register"
+    >
+      Create new account
+    </a>
+  </form>
+</div>
+`;

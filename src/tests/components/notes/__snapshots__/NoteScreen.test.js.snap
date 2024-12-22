@@ -1,0 +1,66 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Tests in <NoteScreen /> should match the snapshot 1`] = `
+<div>
+  <div
+    class="notes__main-content animate__animated animate__fadeIn animate__faster"
+  >
+    <div
+      class="notes__appbar"
+    >
+      <span>
+        December 21st 2024
+      </span>
+      <input
+        id="fileSelector"
+        name="file"
+        style="display: none;"
+        type="file"
+      />
+      <div>
+        <button
+          class="btn"
+        >
+          Picture
+        </button>
+        <button
+          class="btn"
+        >
+          Save
+        </button>
+      </div>
+    </div>
+    <div
+      class="notes__content"
+    >
+      <input
+        class="notes__title-input"
+        name="title"
+        placeholder="Some awesome title"
+        type="text"
+        value="Test"
+      />
+      <textarea
+        class="notes__textarea"
+        name="body"
+        placeholder="What appened today"
+      >
+        Testing with Jest and Testing-Library
+      </textarea>
+      <div
+        class="notes__image"
+      >
+        <img
+          alt="Test"
+          src="https://someurl.com"
+        />
+      </div>
+    </div>
+    <button
+      class="btn btn-danger"
+    >
+      Delete
+    </button>
+  </div>
+</div>
+`;

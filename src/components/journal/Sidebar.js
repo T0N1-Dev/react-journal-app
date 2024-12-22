@@ -25,7 +25,7 @@ export const Sidebar = () => {
                 <span>{ name }</span>
             </h3>
 
-            <button className='btn mt-5' onClick={ handleLogout }>
+            <button className='btn mt-5' onClick={ handleLogout } data-testid='logout'>
                 Logout
             </button>
         </div>
@@ -33,7 +33,7 @@ export const Sidebar = () => {
         <div 
         className='journal__new-entry'
         onClick={ handleAddNew }
-        
+        data-testid='new-entry'
         >
             <i className='far fa-calendar-plus fa-5x mb-1'></i>
             <p>

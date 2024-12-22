@@ -1,0 +1,57 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Tests in <RegisterScreen/> should match the snapshot 1`] = `
+<div>
+  <h3
+    class="auth__title"
+  >
+    Register
+  </h3>
+  <form
+    class="animate__animated animate__fadeIn animate__faster"
+  >
+    <input
+      autocomplete="off"
+      class="auth__input"
+      name="name"
+      placeholder="Name"
+      type="text"
+      value="Test"
+    />
+    <input
+      autocomplete="off"
+      class="auth__input"
+      name="email"
+      placeholder="Email"
+      type="text"
+      value="test@gmail.com"
+    />
+    <input
+      class="auth__input"
+      name="password"
+      placeholder="Password"
+      type="password"
+      value="123456"
+    />
+    <input
+      class="auth__input"
+      name="password2"
+      placeholder="Confirm Password"
+      type="password"
+      value="123456"
+    />
+    <button
+      class="btn btn-primary btn-block mb-5"
+      type="submit"
+    >
+      Register
+    </button>
+    <a
+      class="link"
+      href="/auth/login"
+    >
+      Already registered?
+    </a>
+  </form>
+</div>
+`;

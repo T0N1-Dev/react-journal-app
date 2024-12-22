@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Pruebas en <AppRouter /> should match with snapshot 1`] = `
+<div>
+  <h1>
+    Wait...
+  </h1>
+</div>
+`;

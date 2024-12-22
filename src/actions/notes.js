@@ -5,7 +5,6 @@ import { loadNotes } from "../helpers/loadNotes";
 import Swal from "sweetalert2";
 import { fileUpload } from "../helpers/fileUpload";
 
-
 export const startNewNote = () => {
     return async ( dispatch, getState ) => {
 
@@ -25,11 +24,10 @@ export const startNewNote = () => {
                 Swal.showLoading();
             }
         });
-
+        
         try {
             const docRef = await addDoc(collection(db, `${uid}/journal/notes`), newNote);
             const noteWithId = { id: docRef.id, ...newNote };
-
             dispatch( activeNote( docRef.id, newNote ));
             dispatch(addNoteToState(noteWithId));
         } catch (error) {
@@ -129,7 +127,7 @@ export const startDeleting = ( id ) => {
     return (dispatch, getState) => {
          const { uid } = getState().auth;
          const notRef = doc(db, `${uid}/journal/notes/${id}`);
-
+         
          try {
             Swal.fire({
                 title: "Are you sure?",

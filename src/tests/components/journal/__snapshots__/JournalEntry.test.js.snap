@@ -1,0 +1,38 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Tests in <JournalEntry /> should match snapshot 1`] = `
+<div>
+  <div
+    class="journal__entry pointer animate__animated animate__backInLeft animate__faster"
+  >
+    <div
+      class="journal_entry-picture"
+      style="background-size: cover; background-image: url(https://someurl.com);"
+    />
+    <div
+      class="journal_entry-body"
+    >
+      <p
+        class="journal__entry-title"
+      >
+        Hello
+      </p>
+      <p
+        class="journal__entry-content"
+      >
+        World
+      </p>
+    </div>
+    <div
+      class="journal__entry-date-box"
+    >
+      <span>
+        Wednesday
+      </span>
+      <h4>
+        31st
+      </h4>
+    </div>
+  </div>
+</div>
+`;

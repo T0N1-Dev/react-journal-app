@@ -11,7 +11,6 @@ export const startLoginEmailPassword = (email, password) => {
         try {
             dispatch(startLoading());
             const {user} = await signInWithEmailAndPassword(auth, email, password);
-
             dispatch( login(user.uid, user.displayName));
             dispatch(finishLoading());
         }
@@ -64,7 +63,7 @@ export const login = (uid, displayName) => ({
     })
 
 export const startLogout = () => {
-    return async (dispatch) => {
+    return async (dispatch, getState) => {
         try {
             await auth.signOut();
             dispatch( logout() );

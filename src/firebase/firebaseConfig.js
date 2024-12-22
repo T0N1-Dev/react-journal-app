@@ -1,18 +1,16 @@
-// Import the functions you need from the SDKs you need
 import { initializeApp } from "firebase/app";
-import { getFirestore } from "firebase/firestore";
+import { connectFirestoreEmulator, getFirestore } from "firebase/firestore";
 import { getAuth, GoogleAuthProvider } from "firebase/auth";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyDxBOOCRMPTVuvsRV-MoSAn5-LFa6uaKPY",
-  authDomain: "react-app-curso-85b71.firebaseapp.com",
-  projectId: "react-app-curso-85b71",
-  storageBucket: "react-app-curso-85b71.firebasestorage.app",
-  messagingSenderId: "272853812860",
-  appId: "1:272853812860:web:f8e257e7126333f1412bf9"
+  apiKey: process.env.REACT_APP_APIKEY,
+  authDomain: process.env.REACT_APP_AUTHDOMAIN,
+  projectId: process.env.REACT_APP_PROJECTID,
+  storageBucket: process.env.REACT_APP_STORAGEBUCKET,
+  messagingSenderId: process.env.REACT_APP_MESSAGINGSENDERID,
+  appId: process.env.REACT_APP_APPID
 };
 
-// Initialize Firebase
 const app = initializeApp(firebaseConfig);
 const db = getFirestore(app);
 const auth = getAuth(app);

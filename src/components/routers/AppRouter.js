@@ -18,7 +18,7 @@ export const AppRouter = () => {
     auth.onAuthStateChanged(async (user) => {
       if (user?.uid) {
         dispatch(login(user.uid, user.displayName));
-        setIsLoggedIn(true);
+        setIsLoggedIn(true); 
 
         dispatch(startLoadingNotes(user.uid));
         
@@ -39,7 +39,7 @@ export const AppRouter = () => {
           <PublicRoute 
             path="/auth/*" 
             component={AuthRouter}
-            isAuthenticated={ isLoggedIn }
+            isAuthenticated={isLoggedIn}
           />
           <PrivateRoute 
             exact 
